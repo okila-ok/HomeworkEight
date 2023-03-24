@@ -28,6 +28,7 @@ public class Main {
         System.out.println(EmployeeUtils.findMinSalary(managers));
         System.out.println(EmployeeUtils.findMaxNumberOfSubordinates(managers));
         System.out.println(EmployeeUtils.findMaxIncrement(managers));
+        System.out.println(EmployeeUtils.findMinIncrement(managers));
 
         Director dir1 = new Director("Chris", 10, 1);
         Director dir2 = new Director("Kyle", 20, 2);
