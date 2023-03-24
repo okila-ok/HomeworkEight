@@ -20,7 +20,7 @@ public class Main {
         System.out.println(empUtils.findMaxSalary(workers));
         System.out.println(empUtils.salarySum(workers));
 
-        // N.B. the code will give 0 for small baseSalary and small numberOfSubordinates
+        // N.B. regarding findMinSalary, the code will give 0 for small baseSalary and small numberOfSubordinates
         Manager man1 = new homeworkEight2.Manager("Joe", 1000, 100);
         Manager man2 = new homeworkEight2.Manager("John", 2000, 200);
         Manager man3 = new homeworkEight2.Manager("Lee", 3000, 300);
@@ -28,6 +28,7 @@ public class Main {
         System.out.println(EmployeeUtils.findMinSalary(managers));
         System.out.println(EmployeeUtils.findMaxNumberOfSubordinates(managers));
         System.out.println(EmployeeUtils.findMaxIncrement(managers));
+        System.out.println(EmployeeUtils.findMinIncrement(managers));
 
         Director dir1 = new Director("Chris", 10, 1);
         Director dir2 = new Director("Kyle", 20, 2);
