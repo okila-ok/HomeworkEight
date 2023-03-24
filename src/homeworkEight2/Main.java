@@ -20,9 +20,12 @@ public class Main {
         System.out.println(empUtils.findMaxSalary(workers));
         System.out.println(empUtils.salarySum(workers));
 
-        Manager man1 = new homeworkEight2.Manager("Joe", 10, 1);
-        Manager man2 = new homeworkEight2.Manager("John", 20, 2);
-        Manager man3 = new homeworkEight2.Manager("Lee", 30, 3);
+        // N.B. the code will give 0 for small baseSalary and small numberOfSubordinates
+        Manager man1 = new homeworkEight2.Manager("Joe", 1000, 100);
+        Manager man2 = new homeworkEight2.Manager("John", 2000, 200);
+        Manager man3 = new homeworkEight2.Manager("Lee", 3000, 300);
+        Manager[] managers = {man1, man2, man3};
+        System.out.println(EmployeeUtils.findMinSalary(managers));
 
         Director dir1 = new Director("Chris", 10, 1);
         Director dir2 = new Director("Kyle", 20, 2);

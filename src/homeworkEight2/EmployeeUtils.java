@@ -31,7 +31,7 @@ public class EmployeeUtils {
 
         return -1;
     }
-// For code below (lines 37 - 43 inclusive): Sergey used Worker (to get salarySum for workers)
+// For code below (lines 37 - 45 inclusive): Sergey used Worker (to get salarySum for workers)
 // and said Manager could be used too (for getting salarySum for managers).
 // This was done because Employee didn't have the method required and
 // because we (at that moment) didn't know about 'super' yet.
@@ -44,7 +44,7 @@ public class EmployeeUtils {
         return result;
         }
 
-// comments (lines: 34 - 37) are applicable to the code  (lines: 49 - 55) too. N.B. Sergey didn't provide
+// comments (lines: 34 - 37) are applicable to the code  (lines: 49 - 59) too. N.B. Sergey didn't provide
 // a code for minSalary, minNumberOfEmployees, maxNumberOfEmployees, maxIncrement, minIncrement
 // so don't look for the code for those here please ;)
 
@@ -56,6 +56,17 @@ public class EmployeeUtils {
             }
         }
         return max;
+    }
+
+    // my code for minSalary, minNumberOfEmployees, maxNumberOfEmployees, maxIncrement, minIncrement
+    public static int findMinSalary(Manager[] arr) {
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (min > arr[i].getSalaryManager()) {
+                min = arr[i].getSalaryManager();
+            }
+        }
+        return min;
     }
 }
 
