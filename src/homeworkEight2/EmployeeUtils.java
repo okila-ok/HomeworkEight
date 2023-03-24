@@ -59,7 +59,7 @@ public class EmployeeUtils {
     }
 
     // my code for minSalary, minNumberOfEmployees, maxNumberOfEmployees, maxIncrement, minIncrement
-    public static int findMinSalary(Manager[] arr) {
+    public static int findMinSalary(Manager[] arr){
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (min > arr[i].getSalaryManager()) {
@@ -68,5 +68,16 @@ public class EmployeeUtils {
         }
         return min;
     }
+
+    public static int findMinNumberOfEmployees(Director[] arr){
+        int minNum = Integer.MAX_VALUE;
+        for(int i = 0; i < arr.length; i++){
+            if (minNum > arr[i].getNumberOfSubordinates()){
+                minNum = arr[i].getNumberOfSubordinates();
+            }
+        }
+        return minNum;
+    }
+
 }
 

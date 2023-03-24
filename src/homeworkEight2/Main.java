@@ -30,5 +30,7 @@ public class Main {
         Director dir1 = new Director("Chris", 10, 1);
         Director dir2 = new Director("Kyle", 20, 2);
         Director dir3 = new Director("Jasper", 30, 3);
+        Director[] directors = {dir1, dir2, dir3};
+        System.out.println(EmployeeUtils.findMinNumberOfEmployees(directors));
     }
 }
