@@ -26,11 +26,12 @@ public class Main {
         Manager man3 = new homeworkEight2.Manager("Lee", 3000, 300);
         Manager[] managers = {man1, man2, man3};
         System.out.println(EmployeeUtils.findMinSalary(managers));
+        System.out.println(EmployeeUtils.findMaxNumberOfSubordinates(managers));
 
         Director dir1 = new Director("Chris", 10, 1);
         Director dir2 = new Director("Kyle", 20, 2);
         Director dir3 = new Director("Jasper", 30, 3);
         Director[] directors = {dir1, dir2, dir3};
-        System.out.println(EmployeeUtils.findMinNumberOfEmployees(directors));
+        System.out.println(EmployeeUtils.findMinNumberOfSubordinates(directors));
     }
 }

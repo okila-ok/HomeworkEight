@@ -69,7 +69,7 @@ public class EmployeeUtils {
         return min;
     }
 
-    public static int findMinNumberOfEmployees(Director[] arr){
+    public static int findMinNumberOfSubordinates(Director[] arr){
         int minNum = Integer.MAX_VALUE;
         for(int i = 0; i < arr.length; i++){
             if (minNum > arr[i].getNumberOfSubordinates()){
@@ -79,5 +79,14 @@ public class EmployeeUtils {
         return minNum;
     }
 
+    public static int findMaxNumberOfSubordinates(Manager[] arr) {
+        int maxNum = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (maxNum < arr[i].getNumberOfSubordinates()) {
+                maxNum = arr[i].getNumberOfSubordinates();
+            }
+        }
+        return maxNum;
+    }
 }
 
