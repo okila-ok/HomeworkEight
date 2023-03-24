@@ -88,5 +88,15 @@ public class EmployeeUtils {
         }
         return maxNum;
     }
+
+    public static int findMaxIncrement(Manager[] arr) {
+        int maxInc = Integer.MIN_VALUE;
+        for(int i = 0; i < arr.length; i++){
+            if (maxInc < arr[i].getSalaryManager() - arr[i].getBaseSalary()){
+                maxInc = arr[i].getSalaryManager() - arr[i].getBaseSalary();
+            }
+        }
+        return maxInc;
+    }
 }
 
