@@ -22,4 +22,9 @@ public class Employee {
     public void setBaseSalary(int baseSalary){
         this.baseSalary = baseSalary;
     }
+    // adding a new method getSalary to practice Polymorphism;
+
+    public int getSalary(){
+        return getBaseSalary();
+    }
 }

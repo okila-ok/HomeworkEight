@@ -13,4 +13,10 @@ public class Manager extends BaseManager {
             return (int) (getBaseSalary() * (getNumberOfSubordinates() / 100.0 * 3));
         }
     }
+
+    // adding a new method getSalary to practice Polymorphism;
+    @Override
+    public int getSalary(){
+        return (int) (getBaseSalary() * (getNumberOfSubordinates() / 100.0 * 3));
+    }
 }

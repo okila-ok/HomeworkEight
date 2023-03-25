@@ -108,5 +108,13 @@ public class EmployeeUtils {
         }
         return minInc;
     }
+
+    public static int findSumOfSalaries(Employee[] arr) {
+        int sum = 0;
+        for(int i = 0; i < arr.length; i++){
+            sum += arr[i].getSalary();
+        }
+        return sum;
+    }
 }
 

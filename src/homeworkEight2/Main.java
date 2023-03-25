@@ -35,5 +35,21 @@ public class Main {
         Director dir3 = new Director("Jasper", 30, 3);
         Director[] directors = {dir1, dir2, dir3};
         System.out.println(EmployeeUtils.findMinNumberOfSubordinates(directors));
+
+
+        //
+        Worker wr3 = new Worker("Chandler", 10);
+        Manager man4 = new Manager("Monica", 2000, 100);
+        Director dir4 = new Director("Ross", 3000, 200);
+        Employee[] empExtended = {wr3, man4, dir4}; // masking Worker, Manager, Director to put them into the Employee array
+
+        System.out.println(wr3.getSalary());
+        System.out.println(man4.getSalary());
+        System.out.println(dir4.getSalary());
+        System.out.println(EmployeeUtils.findSumOfSalaries(empExtended));
+
+        System.out.println(dir4.getSalaryManager());
+        System.out.println(empExtended[2].getSalary());
+        System.out.println(((Director) empExtended[2]).getSalaryManager()); // unmasking Director
     }
 }
