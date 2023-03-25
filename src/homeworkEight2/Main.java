@@ -37,7 +37,7 @@ public class Main {
         System.out.println(EmployeeUtils.findMinNumberOfSubordinates(directors));
 
 
-        //
+
         Worker wr3 = new Worker("Chandler", 10);
         Manager man4 = new Manager("Monica", 2000, 100);
         Director dir4 = new Director("Ross", 3000, 200);
