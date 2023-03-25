@@ -48,8 +48,13 @@ public class Main {
         System.out.println(dir4.getSalary());
         System.out.println(EmployeeUtils.findSumOfSalaries(empExtended));
 
+        System.out.println(man4.getSalaryManager());
+        System.out.println(empExtended[1].getSalary());
+        System.out.println(((Manager) empExtended[1]).getSalaryManager()); // unmasking Director
+
         System.out.println(dir4.getSalaryManager());
         System.out.println(empExtended[2].getSalary());
         System.out.println(((Director) empExtended[2]).getSalaryManager()); // unmasking Director
+
     }
 }
