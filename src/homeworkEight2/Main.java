@@ -50,12 +50,12 @@ public class Main {
 
         System.out.println(wr3.getSalary());
         System.out.println(empExtended[0].getSalary());
-        System.out.println(((Worker) empExtended[0]).getSalary()); // unmasking Director
+        System.out.println(((Worker) empExtended[0]).getSalary()); // unmasking Worker
 
 
         System.out.println(man4.getSalaryManager());
         System.out.println(empExtended[1].getSalary());
-        System.out.println(((Manager) empExtended[1]).getSalaryManager()); // unmasking Director
+        System.out.println(((Manager) empExtended[1]).getSalaryManager()); // unmasking Manager
 
         System.out.println(dir4.getSalaryManager());
         System.out.println(empExtended[2].getSalary());
